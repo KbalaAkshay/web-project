@@ -1,0 +1,121 @@
+
+<html>
+    <head>
+        <title>Helpful</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                margin:0px;
+                padding:0px;
+            }
+            .parent{
+                position: relative;
+                background-image: url("images/backimage.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height:745px;
+                width:100%;
+            }
+            .container{
+                position: absolute;
+                color:white;
+                border: 2px solid white;
+                display: flex;
+                flex-direction: column;
+                margin-left: 270px;
+                align-items: center;
+                width: 400px;
+                height: 400px;
+                margin-top: 170px;
+                border-radius:40px ;
+            }
+            .footer{
+                position: absolute;
+                margin-top:690px;
+                width:100%;
+            text-align: center;
+            color:white;
+            }
+            .form{
+            padding: 10px;
+            margin: 5px;
+            }
+            .user{
+                padding: 15px;
+                margin: 10px;
+                }
+            .butt{
+            display: flex;
+           justify-content: center;
+            padding: 18px;
+           margin: 10px;
+        }
+        .loginform{
+            padding: 13px;
+            margin: 10px;
+        }
+        .social-media a {
+          display: inline-block;
+          margin-right: 10px;
+          color: white;
+          font-size: 20px;
+          transition: color 0.3s ease-in-out;
+        }
+        .forgot{
+            
+            margin-bottom: 1px;
+            color:white;
+            text-decoration: none;
+        }
+        .social-media a:hover {
+          color: white;
+        }
+
+        .social-media i {
+          vertical-align: middle;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="container">
+                <form action="validate.jsp" method="get" class="form">
+                <h1 style="text-align: center;">Log in</h1>
+                <div class="user">
+                    Enter Username:
+                    <input type="text" placeholder="Enter username" name="uname">
+                </div>
+                <div class="user">
+                    Enter Password:
+                    <input type="password" placeholder="Enter password" name="pass">
+                </div>
+                <div class="butt">
+                    <button type="submit" style="width:70px;height:30px;">SUBMIT</button>
+                </div>
+                <div id="re">
+                </div>
+            </form>
+            <div class="loginform">
+                <a href="form.html" style="color: white; text-decoration: none;">Don't Have An Account? Create One!!</a><br/>
+            </div>
+            <div >
+                <a href="forgot.html" style="text-align: center"class="forgot" >Forgot password</a>
+            </div>
+            </div>
+            <div class="footer">
+                <div class="social-media">
+                  <a href="https://www.facebook.com/example" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.twitter.com/example" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/example" target="_blank"><i class="fa fa-instagram"></i></a>
+                  <br/>
+                </div>
+  
+                <div class="copyright">
+                  &copy; 2023 @Akshay. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
