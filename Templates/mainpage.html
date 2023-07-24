@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>know here</title>
     <style>
         *{
             margin:0px;
             padding: 0px;
         }
+        .body{
+            height:100%;
+        }
         .parent{
+            display:flex;
+            flex-direction: column;
             background-image: url("images/login2.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            height: 745px;
+            height:100%;
             width: 100%;
         }
         .navbar{
             background-color: black;
-            height:50px;
+            height:65px;
         }
         .navbar a{
             float: left;
             color: aliceblue;
-            padding: 10px;
+            padding: 15px;
             margin: 10px;
             text-decoration: none;
             font-size: 20px;
@@ -44,11 +50,11 @@
             font-size: 15px;   
         }
         .flexbox{
-            height: 300px;
+            height: 330px;
             width: 330px;
             color: black;
             
-            margin: 10px;
+            margin: 15px;
             border-radius: 20px;
         }
         .flexbox:hover{
@@ -103,25 +109,60 @@
             background-size: cover;
         }
         .dd {
-            float: right;
+            float: left;
             overflow: hidden;
         }
-       
-
-/* Links inside the dropdown */
-        .dda{
-          float: none;
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-          text-align: left;
+        .dd {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
         }
-        .dda a:hover {
-            background-color: #ddd;
-          }
-        .dd:hover .dda {
-            display: block;
+        .imga{
+            height:35px;
+            width:35px;
+            border-radius:10px;
+            padding:0px;
+            margin-top:0px;
+        }
+        .aboutm{
+            height:600px;
+            width:90%;
+            padding:10px;
+            margin-left:50px;
+        }
+        .matter{
+            font-size:20px;
+            margin:30px;
+        }
+        .footer{
+                position: absolute;
+                margin-top:0px;
+                width:100%;
+            text-align: center;
+            color:black;
+            }
+           .social-media a {
+          display: inline-block;
+          margin-right: 10px;
+          color: black;
+          font-size: 20px;
+          transition: color 0.3s ease-in-out;
+        }
+        .social-media a:hover {
+          color: black;
+        }
+
+        .social-media i {
+          vertical-align: middle;
+        }
+        .contacth{
+            padding:10px;
+            margin-left:50px;
+        }
+        #section-3{
+            height:100px;
         }
     </style>
 </head>
@@ -129,12 +170,15 @@
     <div class="parent">
 
         <div class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact us</a>
-            <a href="#">News</a>
-            <div class="dd"><a href="#">Account</a></div>
+            <a href="mainpage.html"><img src="images/logo.jpg" alt="logo" class="imga"></a>
+            <a href="#section-2">About</a>
+            <a href="#section-3">Contact us</a>
+            <div class="right">
+                <a href="#" id="dd">Account</a>
+                
+            </div>
         </div>
+        
         <div class="flex">
             <div class="flexbox">
                 <div class="img1">
@@ -209,6 +253,42 @@
                 </div>
             </div>
         </div>
+        
+        <section id="section-2">
+        <div class="aboutm">
+            <h2>About</h2>
+            <p class="matter">In today's modern era, where digital advancements have become an integral part of daily life, government-issued identification cards hold immense significance for citizens. These cards serve as a crucial means of verification and access to essential services, ranging from healthcare facilities and financial transactions to travel and official documentation. However, the conventional process of applying for these cards often involves tedious paperwork, long waiting times, and bureaucratic complexities.
+            </p>
+<p class="matter">In response to these challenges, our pioneering web platform has emerged as a transformative solution to streamline the application process for various government-issued cards. With a deep understanding of the importance of these identification documents in citizens' lives, we have meticulously designed a secure, efficient, and user-friendly online platform.
+</p>
+<p class="matter">Central to our approach is a dedication to putting citizens' needs first. Our intuitive user interface ensures that applicants of all technological backgrounds can easily navigate through the application process. We have created a seamless and hassle-free experience, eliminating the frustrations often associated with government paperwork.
+</p>
+<p class="matter">Recognizing the diversity of government-issued cards and their unique requirements, our platform offers support for a wide array of identification documents. From national identity cards and driver's licenses to healthcare cards and more, citizens can access all these services conveniently through our centralized platform.
+</p>
+<p class="matter">Ensuring the confidentiality and security of applicants' personal information is our utmost priority. To protect sensitive data, we employ state-of-the-art encryption protocols and stringent security measures. Applicants can rest assured that their information remains safeguarded from unauthorized access.
+</p>
+<p class="matter">Our platform's efficiency lies in its ability to expedite the application processing. By automating various steps, we reduce waiting times and enable faster card issuance, ensuring citizens receive their identification documents promptly.
+</p>
+        </div>
+            </section>
+        
+        <section id="section-3">
+            <h2 class="contacth">Contact</h2>
+            <div class="footer">
+                
+                <div class="social-media">
+                  <a href="https://www.facebook.com/example" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.twitter.com/example" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/example" target="_blank"><i class="fa fa-instagram"></i></a>
+                  <br/>
+                </div>
+  
+                <div class="copyright">
+                  &copy; 2023 @Akshay. All rights reserved.
+                </div>
+            </div>
+        </section>
     </div>
+        
 </body>
 </html>
