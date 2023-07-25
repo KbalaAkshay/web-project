@@ -13,13 +13,19 @@
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <style type="text/css">
+    .total{
+         background-image: url("images/login2.jpg");
+         height:100%;
+    }
 .form-gap {
     padding-top: 70px;
+  
 }
 </style>
 </head>
 
 <body>
+    <div class="total">
 	<div class="form-gap"></div>
 	<div class="container">
 		<div class="row">
@@ -69,5 +75,6 @@
 			</div>
 		</div>
 	</div>
+                  </div>
 </body>
 </html>
