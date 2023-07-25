@@ -3,7 +3,7 @@
 <head>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<title>Snippet - BBBootstrap</title>
+<title>Snippet</title>
 <link
 	href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'
 	rel='stylesheet'>
@@ -13,6 +13,10 @@
 <script type='text/javascript'
 	src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <style>
+    .container2{
+         background-image: url("images/login2.jpg");
+         height:745px;
+    }
 .placeicon {
 	font-family: fontawesome
 }
@@ -26,7 +30,9 @@
 <body oncontextmenu='return false' class='snippet-body bg-info'>
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
-	<div>
+	
+        <div class="container2">
+        <div>
 		<!-- Container containing all contents -->
 		<div class="container">
 			<div class="row justify-content-center">
@@ -66,34 +72,12 @@
 								</div>
 							</form>
 						</div>
-						<!-- Alternative Login -->
-						<div class="mx-0 px-0 bg-light">
-							
-							<!-- Horizontal Line -->
-							<div class="px-4 pt-5">
-								<hr>
-							</div>
-							<!-- Register Now -->
-							<div class="pt-2">
-								<div class="row justify-content-center">
-									<h5>
-										Don't have an Account?<span><a href="#"
-											class="text-danger"> Register Now!</a></span>
-									</h5>
-								</div>
-								<div
-									class="row justify-content-center align-items-center pt-4 pb-5">
-									<div class="col-4">
-										
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+            </div>
 	<script type='text/javascript'
 		src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js'></script>
 	
