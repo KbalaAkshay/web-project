@@ -14,6 +14,8 @@
 body {
 	background-position: center;
 	background-color: #eee;
+        background-image: url("images/login2.jpg");
+        height:690px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #505050;
